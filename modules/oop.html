@@ -1,0 +1,103 @@
+<html>
+<head>
+<link rel="stylesheet" href="../style.css" />
+<script type="text/javascript" src="../menu.js">
+
+</script>
+
+</head>
+<body>
+
+<div id="menubox">
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="modules.html">Modules</a></li>
+<li><a href="#" onclick="hideMenu()">Close</a></li>
+</ul>
+</div>
+<main>
+
+<top>
+<header>
+<heading>The E-Portfolio of Gareth Williams</heading>
+<menu><a href="../index.html" alt="Home"><img src="../graphics/home1.svg" width="40" alt="Home" /></a>&nbsp;<a class="menuButton" onclick="showMenu()">☰</a></menu>
+</header>
+</top>
+
+<left>
+<heading>Modules</heading><br /><br />
+<ul>
+<li><a href="#">Launching into Computer Science</a></li>
+<li><a href="oop.html">Object-oriented Programming</a></li>
+<li><a href="#">Secure Software Development</a></li>
+
+</ul>
+
+
+</left>
+
+<right>
+<h2>Welcome to Object-orientated Programming.</h2>
+<p>Here you will find artefacts and reflections related to the Object-Orientated Programming module.</p>
+<h3>Unit 1</h3>
+<p>In this introductory unit, we are introduced to some of the core concepts of object-orientated programming, namely inheritance and polymorphism.</p>
+<p>We were set the task of reading the article entitled 'The Power of ePortfolio Development to Foster Reflective and Deeper Learning in an Online Graduate Adult Education Program’ by Di Silvestro & Nadir (2021)' and comment on an unexpected aspect. My thoughts are as follows:</p>
+<p><i>The article ‘The Power of ePortfolio Development to Foster Reflective and Deeper Learning in an Online Graduate Adult Education Program’ by Di Silvestro & Nadir (2021) provides an interesting insight into the many aspects and benefits of ePortfolios. In particular, the article suggests that reflective learning is of particular benefit since individuals tend to learn best by reflecting on their own experiences and goes on to state that “Reflective learning is closely associated with the development of self-knowledge and transformative learning.”</i></p>
+<p>We were also asked to read the article 'State-of-the-Art Object-Oriented Metrics and Its Reusability: A Decade Review (Padhy <i>et al</i>)' and submit a forum post discussing the factors in software reusability. My submission was as follows:</p>
+<img src="Unit_1_Capture_1.png" width="80%" />
+<p>Finally, we were set the task of developing a Python program to demonstrate protected and unprotected variables. I have included my program below.</p><br />
+<img src="Unit_1_Capture_2.png" /><br /><br />
+<p>In this program, the convention of naming protected variables within a class with a preceeding underscore is followed.</p>
+
+<h3>Unit 2</h3>
+<p>In this unit, we were asked to write a Python program to achieve basic employee-related functionality which includes retaining employee details and allowing an employee to book a day of annual leave.</p>
+<p>My approach to this task was to define an Employee class, instantiate three Employee objects and define a function to allow the user to book a future absence.</p><br />
+<img src="Unit_2_Capture_1.png" />
+
+<h3>Unit 3</h3>
+<p>This unit introduced us to the Unified Modelling Language (UML) and set us the task of designing a UML diagram to demonstrate the basic functionality of a washing machine. I have include my diagram below:</p><br />
+<img src="Unit_3_Capture_1.png" width="50%"/>
+
+<h3>Unit 5</h3>
+<p>In this unit, we are asked to review the Codio module <i>inheritance.</i></p>
+<p>The Codio module uses a card game to explain the concept of inheritance whereby a <i>Hand</i> class takes a <i>Deck</i> object as an argument. In this case, the Hand class inherits all of the properties of the Deck class, such as the Shuffle() method.</p>
+<p>A similar way of demonstrating inheritance could be through defining a <i>Mammal</i> class which would include the basic methods breathe() and eat() which all mammals must share, and then pass this class to a <i>Dog</i> class, for example. The Dog class would inherit the breathe() and eat() methods but would have its own unique methods, such as bark(), which is not necessarily shared among other mammals.</p> 
+<p>We were also asked to develop a program demonstrating the concept of polymorphism which could be used in a driveless car program. For this task, I have written a small program which includes the <i>Drivetrain</i> and <i>Navigation</i> classes, each of which has a method called start(). This is shown below:</p>
+<img src="Unit_5_Capture_1.png" />
+<p>This produces the following output:</p>
+<img src="Unit_5_Capture_2.png" />
+<h3>Unit 6</h3>
+<p>In this unit, we reviewed the concept of abstraction. The associated Codio module highlighted a few key aspects of the Python approach to class implementation which stood out to me, namely that class attributes are public by default. This is in constrast to say, C++, where attributes must explicitly be declared using the <b>public</b> keyword before they can be accessed by functions outside of the class. It is also interesting to note that delcaring a variable private by using a single preceeding underscore is a convention only in Python; it does not change how that variable can be accessed. Using a double underscore however does enforced restrictions on how private attributes can be accessed. Doing so requires the use of a helper function to return that private variable.</p>
+
+<h3> Unit 7</h3>
+<p>This unit was concerned with debugging, data structures and data searching. For this unit, I want to discuss the ways in which data structures support object-oriented development.</p>
+<p>Data structures allow related objects to be grouped together in a logical way. For example, suppose we want to keep track of a group of 30 students in a program designed to store their id numbers and other basic information. One way we could approach this problem is to define a variable for each student, i.e. student1, student2, ..., student30. This would be a very cumbersome way of managing the student variables and gives us no way of adding extra data, such as grades or contact details. In such a system, we'd need to define extra variables, such as student1_grade, student2_grade and so on. This would be completely unmanageable, especially if we were to apply it to larger student numbers. Data structures allow us to store such information in accessible formats.</p>
+<p>In our example, we could define a list, which is a collection of items, to hold the student id numbers which we'd declare using the command <b>student_ids = []</b>. This would then allow us to append id numbers to the list by using the command <b>student_ids.append('1')</b>. The limitation here is that there is no obvious link to other student data. A better approach would be to use the Dictionary data structure which would allow us to link student objects with id numbers. For example, we could define the following <b>Dict</b>:<br /><br />
+
+student_ids = {<br />
+"student_1": "1",<br />
+"student_2": "2",<br />
+# ...and so on<br />
+}<br /><br />
+This would allow us to access the id number data by specifying the student number when calling the dict, i.e. <b>print(student_ids["student1"])</b>.</p>
+<p>Finally, we may want to ensure that our student ids are unique, i.e. there are no duplicates. To achieve this, we could define a <b>set</b>, and add each id number from the student_ids dict. Since sets only store unique values, we could then compare the number of entries in the set with the number of key pairs in the dict. If they do not match, there must be a duplicate.</p>
+
+<h3>Unit 8</h3>
+<p>In this unit, we were asked to discuss the strengths and weaknesses of the metamodel approach to the design of Internet of Things devices and submit within a forum. A copy of my contribution is below:</p>
+<img src="Unit_8_Capture_1.png" width="90%" /> 
+
+<h3>Unit 9</h3>
+<p>In this unit, we were tasked with extending a basic string operation program with the use of the <b>assert</b> keyword to test the function of those operations. My submission is below:</p><br />
+<img src="Unit_9_Capture_1.png" />
+<p>On lines 13 and 14, new variables are initialised with the result of the operations used within the print() statements on lines 7 and 10. Lines 16 and 17 use the assert keyword to test whether the result of the string operations stored in the variables <b>concat_str</b> and <b>repeat_str</b> produce the output we expect, that is, 'HelloWorld!' and 'HelloHelloHello'. Running this program yields no output, as expected.</p>
+<p>To test the effectiveness of the assert statements, the program is run again, this time following a deliberate mistake in each of the evaluation strings, as shown below:</p>
+<img src="Unit_9_Capture_2.png" />
+<p>Here, the first letter is removed from the evaluation string on line 16 and the last letter from the evaluation string on line 17. This produces the following output:</p>
+<img src="Unit_9_Capture_3.png" />
+<p>The assert error raises an exception indicating that the first assert statement is false. Since exceptions terminate program flow, the second assert statement is no longer evaluated.</p>
+
+
+</right>
+
+</main>
+</body>
